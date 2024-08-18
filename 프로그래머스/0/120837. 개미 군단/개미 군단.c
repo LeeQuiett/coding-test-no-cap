@@ -4,39 +4,11 @@
 
 int solution(int hp) {
     int answer = 0;
-    
-    int high = 5;
-    int middle = 3;
-    int bottom = 1;
-    
-    int quo = hp / high;
-    int remainder = hp % high;
-    
-    if(remainder == 0)
-    {
-        answer = quo;
-        return answer;
-    }
-    else
-    {
-        answer = quo;
-        quo = remainder / middle;
-        remainder = remainder % middle;
-        
-        if(remainder == 0)
-        {
-            answer = answer + quo;
-            return answer;
-        }
-        else
-        {
-            answer = answer + quo;
-            quo = remainder / bottom;
-            
-            answer = answer + quo;
-            return answer;
-        }
-    }
+    int high, middle, bottom;
+    high = hp / 5;
+    middle = (hp % 5) / 3;
+    bottom = ((hp % 5) % 3) / 1;
+    answer = high + middle + bottom;
     
     return answer;
 }
