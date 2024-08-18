@@ -32,19 +32,9 @@ int solution(int hp) {
         {
             answer = answer + quo;
             quo = remainder / bottom;
-            remainder = remainder % bottom;
             
-            if(remainder == 0)
-            {
-                answer = answer + quo;
-                return answer;
-            }
-            else
-            {
-                answer = answer + quo;
-                return answer;
-                
-            }
+            answer = answer + quo;
+            return answer;
         }
     }
     
