@@ -9,7 +9,7 @@ class Solution {
         // 가장 큰 돗자리부터 순차적으로 검사
         for (int t = mats.length - 1; t >= 0; t--) {
             int matSize = mats[t];
-            boolean canPlaceMat = false;
+            // 사실 이거 필요없음 boolean canPlaceMat = false;
 
             // 공원에서 matSize x matSize 크기의 정사각형 검사
             for (int i = 0; i <= rows - matSize; i++) {
@@ -27,7 +27,7 @@ class Solution {
                     }
 
                     if (isFilledMinus) {
-                        canPlaceMat = true;
+                        // canPlaceMat = true;
                         return matSize;
                     }
                 }
