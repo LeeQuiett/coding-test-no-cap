@@ -23,12 +23,6 @@ class Solution {
             }
         }
         
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < 4; j++) {
-                System.out.print(data[i][j] + " ");
-            } System.out.println();
-        }
-        
         int[][] result = Arrays.copyOf(answer,cntAns);
         
         final int sortIndex = getSortIndex(sort_by);
@@ -38,6 +32,14 @@ class Solution {
                 return Integer.compare(o1[sortIndex], o2[sortIndex]);
             }
         });
+        
+        /*
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(data[i][j] + " ");
+            } System.out.println();
+        }
+        */
         
         return result;
     }
