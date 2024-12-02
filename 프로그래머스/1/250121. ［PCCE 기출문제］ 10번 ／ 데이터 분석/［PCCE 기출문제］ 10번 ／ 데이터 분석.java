@@ -32,15 +32,14 @@ class Solution {
                 return Integer.compare(o1[sortIndex], o2[sortIndex]);
             }
         });
-        
         /*
+        테스트코드
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < 4; j++) {
                 System.out.print(data[i][j] + " ");
             } System.out.println();
         }
         */
-        
         return result;
     }
     
