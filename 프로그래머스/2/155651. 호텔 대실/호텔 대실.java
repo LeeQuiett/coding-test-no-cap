@@ -24,7 +24,7 @@ class Solution {
             } System.out.println();
         } */
         
-        int[] timeline = new int[1440 + 10]; //하루는 최대 1440분
+        int[] timeline = new int[1440 + 10]; //하루는 최대 1440분 + 청소시간 10분
         
         for (int[] time : times) {
             int start = time[0];
